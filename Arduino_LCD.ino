@@ -1,11 +1,13 @@
 /*
 Benjamin Flatz
+05.03.2020
 
-Arduino Pro Micro
+Arduino Nano
+https://github.com/wrusl/arduino_lcd_temp/tree/master
+https://www.digikey.sk/en/maker/projects/how-to-measure-temperature-with-an-ntc-thermistor/4a4b326095f144029df7f2eca589ca54
 */
 
 #include <LiquidCrystal.h>
-
 
 #define rs 7
 //#define rw 8
@@ -33,10 +35,15 @@ void setup(){
   lcd.begin(16, 2);
 }
 
-int read_temp(){
+float read_temp(){
+
+  const double BETA = 3974.0;
+  const double ROOM_TEMP = 298.15;
   
-  
-  int temp = analogRead(A0);
+  //float temp = (analogRead(A0)*0.004882813);
+  float res = 10000*(5/(analogRead(A0)*0.004882813)-1);
+  float temp = (BETA * ROOM_TEMP) / (BETA + (ROOM_TEMP * log(res/10000)))-273.15;
+
   Serial.println(temp);
   return temp;
 
@@ -46,8 +53,11 @@ int read_temp(){
 
 void loop(){
   
-  lcd.print("hello, world!");
-  read_temp();
+  lcd.print(String(read_temp()));
+  lcd.print(" C");
+  delay(1000);
+  lcd.clear();
+  //read_temp();
 
 
 }
