@@ -19,5 +19,6 @@ Arduino LCD-Temperaturmessung
     2.  ROOM_TEMP = 298.15
     3.  Rntc = 1000*(5/(analogRead(A0)*0.004882813)-1)
     4.  Temp = (BETA*ROOM_TEMP)/(BETA+(ROOM_TEMP*log(Rntc/10000)))-273.15
+  - R=1000kOhm
 
 ![alt text](https://github.com/wrusl/arduino_lcd_temp/blob/master/OjfnSxN18h7TjkffS5xJhDcOfJj2CTi1EGoDweNLQ5AvsGWBWdLWxhUtqO5IwLuvrZGv2HNfvHIMET8UY7cltmUzMXpKL7ZVA_4WqjVK.jpg)
