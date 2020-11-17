@@ -8,6 +8,7 @@
   - Die Datenleitungen 4-7 werden an den Pins D2-D5 angeschlossen
   
 
+
 2.	**Die ADC Messung erfolgt mit diesem Spannungsteiler**
   - Der Abgriffs Punkt wird mit dem A0 Pin verbunden
   - Je höher die Temperatur wird umso höher wird die Spannung beim Abgriff
