@@ -10,7 +10,7 @@
 
 
 2.	**Die ADC Messung erfolgt mit diesem Spannungsteiler**
-  - Der Abgriffs Punkt wird mit dem A0 Pin verbunden
+  - Der Abgriffspunkt wird mit dem A0 Pin verbunden
   - Je höher die Temperatur wird umso höher wird die Spannung beim Abgriff
   - Formeln: 
     1.  BETA = 3974.0 
