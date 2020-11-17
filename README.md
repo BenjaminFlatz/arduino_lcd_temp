@@ -7,9 +7,6 @@
   - Enable wird am Pin D9 angeschlossen
   - Die Datenleitungen 4-7 werden an den Pins D2-D5 angeschlossen
   
-  
-  
-![alt text](https://github.com/wrusl/arduino_lcd_temp/blob/master/16x2-LCD-Pinout.png)
 
 2.	**Die ADC Messung erfolgt mit diesem Spannungsteiler**
   - Der Abgriffs Punkt wird mit dem A0 Pin verbunden
@@ -21,4 +18,3 @@
     4.  Temp = (BETA*ROOM_TEMP)/(BETA+(ROOM_TEMP*log(Rntc/10000)))-273.15
   - R=1000kOhm
 
-![alt text](https://github.com/wrusl/arduino_lcd_temp/blob/master/OjfnSxN18h7TjkffS5xJhDcOfJj2CTi1EGoDweNLQ5AvsGWBWdLWxhUtqO5IwLuvrZGv2HNfvHIMET8UY7cltmUzMXpKL7ZVA_4WqjVK.jpg)
