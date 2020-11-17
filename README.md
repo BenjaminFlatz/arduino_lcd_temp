@@ -1,6 +1,6 @@
-Arduino LCD-Temperaturmessung
+<h1>Arduino LCD-Temperaturmessung</h1>
 
-1.  Verbinde das LCD mit ne Arduino Nano
+1.  **Verbinde das LCD mit ne Arduino Nano**
   - VSS und VDD werden richtig angeschlossen und VE wird an VDD geschlossen für maximalen Kontrast
   - LED + und – werden auch an VDD und VSS angeschlossen
   - Register Select wird am Nano Pin D7 angeschlossen
@@ -11,7 +11,7 @@ Arduino LCD-Temperaturmessung
   
 ![alt text](https://github.com/wrusl/arduino_lcd_temp/blob/master/16x2-LCD-Pinout.png)
 
-2.	Die ADC Messung erfolgt mit diesem Spannungsteiler
+2.	**Die ADC Messung erfolgt mit diesem Spannungsteiler**
   - Der Abgriffs Punkt wird mit dem A0 Pin verbunden
   - Je höher die Temperatur wird umso höher wird die Spannung beim Abgriff
   - Formeln: 
